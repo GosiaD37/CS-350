@@ -1,1 +1,11 @@
-# CS-350
+This project entailed the creation of a smart thermostat prototype based on a Raspberry Pi. The objective was to replicate the basic functions of a smart thermostat system, including sensing temperature, controlling heating and cooling states, user input via buttons, displaying information on an LCD display, and sending status updates via UART. The project solved the problem of low-level environmental control via embedded systems and was a precursor to a future cloud-enabled thermostat product.
+
+One part of this project that I did extremely well was encapsulating the state machine logic to manage the modes of the thermostat (Off, Heat, Cool). I was able to combine user input, real-time sensor data, and LED behavior nicely and cleanly in a concise way. I also had an excellent structure to my code with excellent modularization and an abundance of inline commenting, making it easier to debug and test.
+
+All in all, though, there is always room for improvement. For example, I might be able to improve the display on the LCD by adding a more dynamic, less clunky user interface or extending the project to plot temperature history over time. I would also like to explore implementing Wi-Fi functionality sooner, maybe using an ESP32 or Raspberry Pi Pico W to simulate cloud interaction rather than just using UART output.
+
+In the process of this project, I added several key resources to my support collection, including the GPIOZero and Adafruit libraries, the statemachine Python package for state management, and the draw.io tool for system logic documentation. Raspberry Pi forums and Adafruit's documentation were consulted heavily as well, which proved helpful in bypassing hardware-specific quirks.
+
+Some of the skills that I used here are quite transferable—specifically, writing interface code to pair sensors and actuators with a microcontroller, understanding hardware-software integration, and crafting clean, solid embedded systems. These will be highly relevant not just to future work with embedded systems but to IoT-focused work or studies involving low-level development of systems.
+
+I made it maintainable and flexible by isolating hardware initialization from business logic, clearly documenting every function, and adopting consistent naming conventions. Having a state machine allowed scalable and predictable changes in behavior. The modularity of the code also allows for easy updates of individual components, such as replacing the AHT2 sensor or changing data transmission, without re-writing the entire program.
