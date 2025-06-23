@@ -1,3 +1,5 @@
+PROJECT ONE
+
 This project entailed the creation of a smart thermostat prototype based on a Raspberry Pi. The objective was to replicate the basic functions of a smart thermostat system, including sensing temperature, controlling heating and cooling states, user input via buttons, displaying information on an LCD display, and sending status updates via UART. The project solved the problem of low-level environmental control via embedded systems and was a precursor to a future cloud-enabled thermostat product.
 
 One part of this project that I did extremely well was encapsulating the state machine logic to manage the modes of the thermostat (Off, Heat, Cool). I was able to combine user input, real-time sensor data, and LED behavior nicely and cleanly in a concise way. I also had an excellent structure to my code with excellent modularization and an abundance of inline commenting, making it easier to debug and test.
